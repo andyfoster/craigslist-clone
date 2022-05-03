@@ -1,0 +1,8 @@
+<% @categories.each do |category| %>
+  <p><strong><%= link_to category.name, category.url %></strong></p>
+  
+  <% category.subcategories.each do |subcategory| %>
+    <div class="subcat"><%= link_to subcategory.name, subcategory.url %></div>
+  <% end %> 
+<% end %>
+
