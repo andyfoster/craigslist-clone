@@ -1,0 +1,35 @@
+// Entry point for your Sass build
+
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #dedede;
+}
+
+.main-left {
+  float: left;
+  width: 33.3%;
+}
+
+.main-right {
+  float: right;
+  width: 66.6%;
+}
+
+.category-box {
+  width: 33%;
+  float: left;
+}

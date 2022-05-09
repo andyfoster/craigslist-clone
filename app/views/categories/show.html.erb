@@ -1,5 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
+<% @category.posts.each do |post| %>
+  <div class="category-post">
+    <span class="post-date"><%= time_ago_in_words post.created_at %></span>
+    <span class="post-title"><%= post.title %></span>
+  </div>
+<% end %>
+
 <%= render @category %>
 
 <div>
