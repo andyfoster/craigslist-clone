@@ -1,10 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<a href="javascript:window.print()" class="post-print">Print</a>
+<a href="#">Reply</a>
+<span class="posted-at-top">Posted <%= time_ago_in_words @post.created_at %> ago</span>
 
-<%= render @post %>
+<h1><%= @post.title %></h1>
+<p><%= simple_format @post.content %></p>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
-
-  <%= button_to "Destroy this post", @post, method: :delete %>
-</div>
+<p class="post-meta">
+  <span class="post-id">post id: <%= @post.id.to_s %> </span>
+  <span class="posted-at">Posted <%= time_ago_in_words @post.created_at %> ago</span>
+</p>
